@@ -68,7 +68,7 @@ const produtos = [
 
 let categoriaAtual = "Todos";
 let sacola = [];
-let favoritos = new Set();
+const favoritos = new Set();
 let temporizadorToast;
 
 const listaProdutos = document.querySelector("#products");
@@ -122,29 +122,19 @@ function mostrarProdutos() {
   listaProdutos.innerHTML = encontrados.map(produto => `
     <article class="product">
       <div class="product-image">
-        <img
-          src="${produto.imagem}"
-          alt="${produto.nome}"
-          loading="lazy"
-        >
-
+        <img src="${produto.imagem}" alt="${produto.nome}" loading="lazy">
         <span class="tag">${produto.etiqueta}</span>
-
         <button
           class="favorite ${favoritos.has(produto.id) ? "selected" : ""}"
           data-favorito="${produto.id}"
           aria-label="Favoritar ${produto.nome}"
           aria-pressed="${favoritos.has(produto.id)}"
-        >
-          ${favoritos.has(produto.id) ? "♥" : "♡"}
-        </button>
+        >${favoritos.has(produto.id) ? "♥" : "♡"}</button>
       </div>
-
       <div class="product-info">
         <span class="product-category">${produto.categoria}</span>
         <h3>${produto.nome}</h3>
         <p class="price">${dinheiro(produto.preco)}</p>
-
         <button class="add-button" data-adicionar="${produto.id}">
           ADICIONAR À SACOLA +
         </button>
@@ -187,7 +177,8 @@ function removerSacola(id) {
 
 function mostrarSacola() {
   const quantidadeTotal = sacola.reduce(
-    (soma, item) => soma + item.quantidade, 0
+    (soma, item) => soma + item.quantidade,
+    0
   );
 
   const valorTotal = sacola.reduce((soma, item) => {
@@ -214,39 +205,22 @@ function mostrarSacola() {
     return `
       <div class="cart-item">
         <img src="${produto.imagem}" alt="${produto.nome}">
-
         <div>
           <h3>${produto.nome}</h3>
           <p>${dinheiro(produto.preco)}</p>
-
           <div class="quantity">
-            <button
-              data-quantidade="${produto.id}"
-              data-mudanca="-1"
-              aria-label="Diminuir quantidade"
-            >−</button>
-
+            <button data-quantidade="${produto.id}" data-mudanca="-1" aria-label="Diminuir quantidade">−</button>
             <span>${item.quantidade}</span>
-
-            <button
-              data-quantidade="${produto.id}"
-              data-mudanca="1"
-              aria-label="Aumentar quantidade"
-            >+</button>
+            <button data-quantidade="${produto.id}" data-mudanca="1" aria-label="Aumentar quantidade">+</button>
           </div>
         </div>
-
-        <button
-          class="remove"
-          data-remover="${produto.id}"
-          aria-label="Remover ${produto.nome}"
-        >×</button>
+        <button class="remove" data-remover="${produto.id}" aria-label="Remover ${produto.nome}">×</button>
       </div>
     `;
   }).join("");
 }
 
-// Filtros por categoria
+// Filtros de categoria
 document.querySelectorAll(".filter").forEach(botao => {
   botao.addEventListener("click", () => {
     categoriaAtual = botao.dataset.filter;
@@ -259,10 +233,10 @@ document.querySelectorAll(".filter").forEach(botao => {
   });
 });
 
-// Pesquisa de produtos
+// Pesquisa
 busca.addEventListener("input", mostrarProdutos);
 
-// Botões de produtos e favoritos
+// Adicionar à sacola e favoritar
 listaProdutos.addEventListener("click", evento => {
   const adicionar = evento.target.closest("[data-adicionar]");
   const favorito = evento.target.closest("[data-favorito]");
@@ -286,7 +260,7 @@ listaProdutos.addEventListener("click", evento => {
   }
 });
 
-// Alterar quantidades e remover produtos
+// Alterar quantidades e remover itens
 itensSacola.addEventListener("click", evento => {
   const quantidade = evento.target.closest("[data-quantidade]");
   const remover = evento.target.closest("[data-remover]");
@@ -307,11 +281,13 @@ itensSacola.addEventListener("click", evento => {
 function abrirSacola() {
   sacolaOverlay.hidden = false;
   document.body.style.overflow = "hidden";
+  document.querySelector("#closeCart").focus();
 }
 
 function fecharSacola() {
   sacolaOverlay.hidden = true;
   document.body.style.overflow = "";
+  document.querySelector("#openCart").focus();
 }
 
 document.querySelector("#openCart").addEventListener("click", abrirSacola);
@@ -324,11 +300,14 @@ document.addEventListener("keydown", evento => {
   }
 });
 
-// Finalização demonstrativa: não processa pagamentos
+// Finalização demonstrativa: nenhum pagamento real é realizado
 document.querySelector("#checkout").addEventListener("click", () => {
-  mostrarAviso(
-    "Carrinho demonstrativo! Integre um serviço de pagamento para vender."
-  );
+  if (sacola.length === 0) {
+    mostrarAviso("Sua sacola está vazia!");
+    return;
+  }
+
+  mostrarAviso("Demonstração escolar: nenhum pagamento foi realizado.");
 });
 
 // Categorias da página inicial
@@ -344,21 +323,20 @@ document.querySelectorAll("[data-category]").forEach(link => {
     });
 
     mostrarProdutos();
+    document.querySelector("#loja").scrollIntoView({ behavior: "smooth" });
   });
 });
 
-// Atalho para ver peças e skates
+// Atalho para ver skates e peças
 document.querySelector("[data-show-skates]").addEventListener("click", () => {
   categoriaAtual = "Skates";
 
   document.querySelectorAll(".filter").forEach(botao => {
-    botao.classList.toggle(
-      "active",
-      botao.dataset.filter === "Skates"
-    );
+    botao.classList.toggle("active", botao.dataset.filter === "Skates");
   });
 
   mostrarProdutos();
+  document.querySelector("#loja").scrollIntoView({ behavior: "smooth" });
 });
 
 // Menu para celular
@@ -367,7 +345,12 @@ const nav = document.querySelector("#nav");
 
 menuToggle.addEventListener("click", () => {
   const aberto = nav.classList.toggle("open");
+
   menuToggle.setAttribute("aria-expanded", String(aberto));
+  menuToggle.setAttribute(
+    "aria-label",
+    aberto ? "Fechar menu" : "Abrir menu"
+  );
   menuToggle.textContent = aberto ? "✕" : "☰";
 });
 
@@ -375,6 +358,7 @@ nav.querySelectorAll("a").forEach(link => {
   link.addEventListener("click", () => {
     nav.classList.remove("open");
     menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.setAttribute("aria-label", "Abrir menu");
     menuToggle.textContent = "☰";
   });
 });
@@ -382,6 +366,6 @@ nav.querySelectorAll("a").forEach(link => {
 // Ano automático no rodapé
 document.querySelector("#year").textContent = new Date().getFullYear();
 
-// Iniciar a página
+// Inicializar a página
 mostrarProdutos();
 mostrarSacola();
