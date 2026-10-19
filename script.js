@@ -1,4 +1,3 @@
-
 const produtos = [
   // SHAPES E PEÇAS
   {
