@@ -1,207 +1,125 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="DROP RIOT — skate, tênis, roupas e cultura de rua.">
+  <meta name="description" content="DROP RIOT — skate, peças, tênis, roupas e proteção para o seu rolê.">
   <title>DROP RIOT | Skate & Streetwear</title>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-
-  <div class="announcement">
-    SKATE • STREETWEAR • CULTURA DE RUA
-  </div>
+  <div class="announcement">DROP RIOT — SEU ESTILO, SUAS REGRAS.</div>
 
   <header class="header">
-    <a href="#inicio" class="logo">DROP <span>RIOT✳</span></a>
-
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
-
+    <a class="logo" href="#inicio">DROP<span>RIOT</span><small>SKATE & STREETWEAR</small></a>
+    <button id="menuToggle" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
     <nav id="nav">
-      <a href="#inicio">INÍCIO</a>
-      <a href="#categorias">CATEGORIAS</a>
-      <a href="#loja">LOJA</a>
-      <a href="#skatistas">SKATISTAS</a>
-      <a href="#sobre">SOBRE</a>
+      <a href="#inicio">Início</a>
+      <a href="#categorias">Categorias</a>
+      <a href="#loja">Loja</a>
+      <a href="#skatistas">Cultura skate</a>
+      <a href="#sobre">Sobre</a>
     </nav>
-
-    <button class="cart-button" id="openCart">
-      SACOLA (<span id="cartCount">0</span>)
-    </button>
+    <button id="openCart" class="cart-button">Sacola (<span id="cartCount">0</span>)</button>
   </header>
 
   <main>
     <section class="hero" id="inicio">
       <div class="hero-content">
-        <p class="eyebrow">YOUR STREET. YOUR RULES.</p>
-        <h1>RIDE YOUR<br><span>OWN WAY.</span></h1>
-        <p>
-          Não é só skate. É liberdade, atitude e um estilo
-          de vida que não segue regras.
-        </p>
-        <a href="#loja" class="button">EXPLORAR A LOJA ↗</a>
+        <p class="eyebrow">MAIS QUE UM ESPORTE. UM ESTILO DE VIDA.</p>
+        <h1>VIVA O<br><span>SKATE.</span></h1>
+        <p>Atitude, liberdade e criatividade em cada manobra. Encontre seu próximo equipamento e parta para o rolê.</p>
+        <a class="button primary" href="#loja">EXPLORAR PRODUTOS ↗</a>
       </div>
-      <div class="hero-sticker">NO RULES.<br>JUST RIDE.</div>
+      <div class="hero-label">RUA • ATITUDE • LIBERDADE</div>
     </section>
 
     <section class="section" id="categorias">
-      <div class="section-title">
-        <p class="eyebrow">ENCONTRE SEU ESTILO</p>
-        <h2>ESCOLHA SEU <span>ROLÊ.</span></h2>
+      <div class="section-heading">
+        <div><p class="eyebrow">ESCOLHA SEU ESTILO</p><h2>EXPLORE AS CATEGORIAS</h2></div>
+        <p>Seu próximo rolê começa aqui.</p>
       </div>
-
-      <div class="categories">
-        <a href="#loja" class="category" data-category="Skates">
+      <div class="category-grid">
+        <button class="category" data-category="Skates">
           <img src="https://images.unsplash.com/photo-1520045892732-304bc3ac5d8e?auto=format&fit=crop&w=700&q=80" alt="Skate">
-          <span>01 / SETUP</span>
-          <h3>SKATES & PEÇAS ↗</h3>
-        </a>
-
-        <a href="#loja" class="category" data-category="Tênis">
+          <span>SKATES ↗</span>
+        </button>
+        <button class="category" data-category="Tênis">
           <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=700&q=80" alt="Tênis">
-          <span>02 / FOOTWEAR</span>
-          <h3>TÊNIS ↗</h3>
-        </a>
-
-        <a href="#loja" class="category" data-category="Roupas">
+          <span>TÊNIS ↗</span>
+        </button>
+        <button class="category" data-category="Roupas">
           <img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=700&q=80" alt="Roupas streetwear">
-          <span>03 / STREETWEAR</span>
-          <h3>ROUPAS ↗</h3>
-        </a>
-
-        <a href="#loja" class="category" data-category="Proteção">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=700&q=80" alt="Equipamentos de proteção">
-          <span>04 / SAFETY</span>
-          <h3>PROTEÇÃO ↗</h3>
-        </a>
+          <span>ROUPAS ↗</span>
+        </button>
+        <button class="category" data-category="Proteção">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=700&q=80" alt="Equipamentos">
+          <span>PROTEÇÃO ↗</span>
+        </button>
       </div>
     </section>
 
-    <section class="shop section" id="loja">
-      <div class="section-title">
-        <p class="eyebrow">DROP RIOT SELECTION</p>
-        <h2>PRODUTOS EM <span>DESTAQUE.</span></h2>
-        <p>Encontre o equipamento perfeito para o seu próximo rolê.</p>
+    <section class="section shop" id="loja">
+      <div class="section-heading">
+        <div><p class="eyebrow">ENCONTRE SEU PRÓXIMO FAVORITO</p><h2>LOJA DROP RIOT</h2></div>
+        <input id="search" type="search" placeholder="Buscar produto..." aria-label="Buscar produto">
       </div>
-
-      <div class="shop-controls">
-        <input type="search" id="search" placeholder="Buscar produto..." aria-label="Buscar produto">
-
-        <div class="filters">
-          <button class="filter active" data-filter="Todos">TODOS</button>
-          <button class="filter" data-filter="Skates">SKATES</button>
-          <button class="filter" data-filter="Tênis">TÊNIS</button>
-          <button class="filter" data-filter="Roupas">ROUPAS</button>
-          <button class="filter" data-filter="Proteção">PROTEÇÃO</button>
-        </div>
+      <div class="filters">
+        <button class="filter active" data-filter="Todos">Todos</button>
+        <button class="filter" data-filter="Skates">Skates e peças</button>
+        <button class="filter" data-filter="Tênis">Tênis</button>
+        <button class="filter" data-filter="Roupas">Roupas</button>
+        <button class="filter" data-filter="Proteção">Proteção</button>
       </div>
-
-      <div class="products" id="products"></div>
-      <p class="note">Produtos e preços ilustrativos. Atualize as informações antes de vender.</p>
+      <div id="products" class="product-grid"></div>
+      <p class="demo-note">Projeto demonstrativo escolar: produtos, preços e sacola são fictícios.</p>
     </section>
 
     <section class="build">
-      <div class="build-photo"></div>
-      <div class="build-content">
-        <p class="eyebrow">CRIE SEU PRÓPRIO SETUP</p>
-        <h2>SEU SKATE.<br><span>SUAS REGRAS.</span></h2>
-        <p>
-          Escolha shape, rodas, trucks, rolamentos e lixa.
-          Monte um skate com a sua personalidade.
-        </p>
-        <a href="#loja" class="button button-dark" data-show-skates>
-          VER SKATES E PEÇAS ↗
-        </a>
+      <div>
+        <p class="eyebrow">MONTE DO SEU JEITO</p>
+        <h2>SEU SKATE.<br>SUAS ESCOLHAS.</h2>
+        <p>Escolha peças como shape e rodas para imaginar a montagem do seu próprio skate.</p>
+        <button class="button primary" data-show-skates>VER SKATES E PEÇAS ↗</button>
       </div>
+      <div class="build-symbol">DR<span>®</span></div>
     </section>
 
-    <section class="section" id="skatistas">
-      <div class="section-title">
-        <p class="eyebrow">LENDAS E INSPIRAÇÃO</p>
-        <h2>SKATE É <span>CULTURA.</span></h2>
-        <p>Conheça pessoas que marcaram a história do skate.</p>
-      </div>
-
-      <div class="skaters">
-        <article class="skater">
-          <img src="https://images.unsplash.com/photo-1564982752979-3f7bc974d29a?auto=format&fit=crop&w=700&q=80" alt="Imagem ilustrativa de skate">
-          <div>
-            <span>SKATE INTERNACIONAL</span>
-            <h3>Tony Hawk</h3>
-            <p>
-              Uma das maiores referências do skate vertical.
-              Ficou conhecido por sua trajetória e por popularizar o esporte.
-            </p>
-            <a href="https://www.tonyhawk.com/" target="_blank" rel="noopener">CONHEÇA MAIS ↗</a>
-          </div>
-        </article>
-
-        <article class="skater">
-          <img src="https://images.unsplash.com/photo-1564429238817-393bd4286b2d?auto=format&fit=crop&w=700&q=80" alt="Imagem ilustrativa de skate">
-          <div>
-            <span>STREET BRASILEIRO</span>
-            <h3>Rayssa Leal</h3>
-            <p>
-              Skatista brasileira que conquistou o mundo no street
-              e inspirou milhares de jovens.
-            </p>
-            <a href="https://olympics.com/pt/atletas/rayssa-leal" target="_blank" rel="noopener">CONHEÇA MAIS ↗</a>
-          </div>
-        </article>
-
-        <article class="skater">
-          <img src="https://images.unsplash.com/photo-1520045892732-304bc3ac5d8e?auto=format&fit=crop&w=700&q=80" alt="Imagem ilustrativa de skate">
-          <div>
-            <span>BRASIL NO MUNDO</span>
-            <h3>Bob Burnquist</h3>
-            <p>
-              Referência brasileira conhecida por sua criatividade
-              e por inovar nas rampas.
-            </p>
-            <a href="https://www.bobburnquist.com/" target="_blank" rel="noopener">CONHEÇA MAIS ↗</a>
-          </div>
-        </article>
-      </div>
+    <section class="section skaters" id="skatistas">
+      <p class="eyebrow">A CULTURA É DE TODOS</p>
+      <h2>RESPEITE A RUA.<br>VALORIZE O ROLÊ.</h2>
+      <p>O skate vai além das manobras: é criatividade, persistência, amizade e liberdade para desenvolver seu próprio estilo.</p>
     </section>
 
-    <section class="about" id="sobre">
-      <p class="eyebrow">MAIS QUE UMA LOJA</p>
-      <h2>A RUA É NOSSA <span>INSPIRAÇÃO.</span></h2>
-      <p>
-        A DROP RIOT celebra o skate, a criatividade e a cultura urbana.
-        Do primeiro skate à próxima manobra, o importante é evoluir
-        no seu próprio ritmo.
-      </p>
-      <a href="#inicio" class="button">VOLTAR AO TOPO ↑</a>
+    <section class="section about" id="sobre">
+      <p class="eyebrow">QUEM SOMOS</p>
+      <h2>FEITA PARA QUEM VIVE O SKATE.</h2>
+      <p>A DROP RIOT é uma marca fictícia criada para um projeto escolar. A proposta é reunir skate, streetwear e equipamentos de proteção em uma loja moderna, com navegação simples e visual inspirado na cultura urbana.</p>
     </section>
   </main>
 
   <footer>
-    <a href="#inicio" class="logo">DROP <span>RIOT✳</span></a>
-    <p>SKATE • STREETWEAR • CULTURA DE RUA</p>
-    <small>© <span id="year"></span> DROP RIOT. Projeto demonstrativo.</small>
+    <a class="logo" href="#inicio">DROP<span>RIOT</span><small>SKATE & STREETWEAR</small></a>
+    <p>LIBERDADE PARA CRIAR. CORAGEM PARA EVOLUIR.</p>
+    <small>© <span id="year"></span> DROP RIOT — Projeto escolar demonstrativo.</small>
   </footer>
 
-  <div class="cart-overlay" id="cartOverlay" hidden>
-    <button class="backdrop" id="closeBackdrop" aria-label="Fechar sacola"></button>
-
+  <div id="cartOverlay" class="cart-overlay" hidden>
+    <button id="closeBackdrop" class="cart-backdrop" aria-label="Fechar sacola"></button>
     <aside class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
       <div class="cart-heading">
         <h2 id="cartTitle">SUA SACOLA</h2>
-        <button id="closeCart" aria-label="Fechar">✕</button>
+        <button id="closeCart" class="close-cart" aria-label="Fechar">×</button>
       </div>
-
       <div id="cartItems" class="cart-items"></div>
-
       <div class="cart-bottom">
-        <p>Subtotal: <strong id="cartTotal">R$ 0,00</strong></p>
-        <small>Este carrinho é demonstrativo e não processa pagamentos.</small>
-        <button class="button" id="checkout">FINALIZAR (DEMO)</button>
+        <p>Total <strong id="cartTotal">R$ 0,00</strong></p>
+        <button id="checkout" class="button primary">FINALIZAR DEMONSTRAÇÃO</button>
+        <small>Esta loja não realiza pagamentos reais.</small>
       </div>
     </aside>
   </div>
