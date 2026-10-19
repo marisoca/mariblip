@@ -1,102 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skate World 2000</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DROP RIOT — skate, tênis, roupas e cultura de rua.">
+  <title>DROP RIOT | Skate & Streetwear</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>SKATE WORLD 2000🛹​</h1>
 
+  <div class="announcement">
+    SKATE • STREETWEAR • CULTURA DE RUA
+  </div>
 
-        <h2> O que é o skate?</h2>
+  <header class="header">
+    <a href="#inicio" class="logo">DROP <span>RIOT✳</span></a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+
+    <nav id="nav">
+      <a href="#inicio">INÍCIO</a>
+      <a href="#categorias">CATEGORIAS</a>
+      <a href="#loja">LOJA</a>
+      <a href="#skatistas">SKATISTAS</a>
+      <a href="#sobre">SOBRE</a>
+    </nav>
+
+    <button class="cart-button" id="openCart">
+      SACOLA (<span id="cartCount">0</span>)
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <p class="eyebrow">YOUR STREET. YOUR RULES.</p>
+        <h1>RIDE YOUR<br><span>OWN WAY.</span></h1>
         <p>
-             O skate é um esporte e também um estilo de vida que conquistou milhões de pessoas 
-            ao redor do mundo. Praticado em ruas, pistas e parques, ele combina equilíbrio,
-             criatividade, técnica e coragem. Além de ser uma atividade física, o skate também 
-             influencia a música, a moda e a cultura urbana, tornando-se uma forma de expressão 
-             para muitos jovens. 
-         </p>
-         <img class="skate"src="y35ofmsvnlg31 (1).jpg">
+          Não é só skate. É liberdade, atitude e um estilo
+          de vida que não segue regras.
+        </p>
+        <a href="#loja" class="button">EXPLORAR A LOJA ↗</a>
+      </div>
+      <div class="hero-sticker">NO RULES.<br>JUST RIDE.</div>
+    </section>
 
-         <h2> A história do skate</h2>
-         <p> 
-            O skate surgiu na década de 1950, nos Estados Unidos. Surfistas da Califórnia
-             procuravam uma maneira de praticar manobras quando não havia ondas no mar.
-              Eles adaptaram rodas em tábuas de madeira, criando os primeiros skates. 
-              Com o passar dos anos, o esporte evoluiu e ganhou equipamentos mais modernos, 
-              permitindo a criação de novas modalidades e manobras.
-         </p>
-         
-         <h2>A evolução do Esporte</h2>
-         <p>
-            Nas décadas seguintes o skate cresceu rapidamente. Novos formatos de pistas Foram
-             construídos e os atletas começaram a desenvolver técnicas cada vez mais avançadas.
-             Hoje existem diversas categorias, como Street, Park e Vert, cada uma exigindo 
-             habilidades específicas. A tecnologia também ajudou no desenvolvimento de shapes,
-             rodas e rolamentos mais resistentes.
-         </p>
+    <section class="section" id="categorias">
+      <div class="section-title">
+        <p class="eyebrow">ENCONTRE SEU ESTILO</p>
+        <h2>ESCOLHA SEU <span>ROLÊ.</span></h2>
+      </div>
 
-         <H2>O Mundo do Skate</H2>
-         <p>
-            O skate é muito mais do que apenas um esporte. Ele representa amizade, liberdade e 
-            superação. Muitos praticantes passam horas treinando para aperfeiçoar suas habilidades 
-            e aprender novas manobras. A comunidade do skate é conhecida por incentivar o respeito 
-            e a união entre os atletas, independentemente da idade ou nível de experiência.
-         </p>
-<img src="images.jfif">
-         <h2>As Principais Manobras</h2>
-         <p>
-        Existem inúmeras manobras no skate, mas algumas são consideradas básicas para quem está 
-        começando. O Ollie é a principal delas, pois permite que o skatista salte sem usar as mãos.
-        Outras manobras famosas incluem o Kickflip, Heelflip, Pop Shove-it e o Grind. Cada uma exige
-        equilíbrio, coordenação e muita prática para ser executada corretamente.
-         </p>
+      <div class="categories">
+        <a href="#loja" class="category" data-category="Skates">
+          <img src="https://images.unsplash.com/photo-1520045892732-304bc3ac5d8e?auto=format&fit=crop&w=700&q=80" alt="Skate">
+          <span>01 / SETUP</span>
+          <h3>SKATES & PEÇAS ↗</h3>
+        </a>
 
-         <h2>Modalidades Street</h2>
-         <p>
-            O Street é uma das modalidades mais populares do skate. Nela, os atletas utilizam 
-            obstáculos que imitam elementos urbanos, como escadas, corrimãos, bancos e rampas. 
-            Essa modalidade exige criatividade para combinar diferentes manobras e criar linhas 
-            impressionantes durante as competições.
-         </p>
+        <a href="#loja" class="category" data-category="Tênis">
+          <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=700&q=80" alt="Tênis">
+          <span>02 / FOOTWEAR</span>
+          <h3>TÊNIS ↗</h3>
+        </a>
 
-         <h2>Modalidades Park</h2>
-         <p> 
-            A modalidade Park acontece em pistas com curvas, bowls e transições suaves. 
-            Os skatistas realizam manobras aéreas e utilizam a velocidade para ganhar altura.
-            Essa categoria ficou ainda mais conhecida após sua inclusão nos Jogos Olímpicos,
-            atraindo novos praticantes e fãs para o esporte.
-         </p>
-         <img src="skate 2000.jpg">
+        <a href="#loja" class="category" data-category="Roupas">
+          <img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=700&q=80" alt="Roupas streetwear">
+          <span>03 / STREETWEAR</span>
+          <h3>ROUPAS ↗</h3>
+        </a>
 
-         <h2>Competições de Skate</h2>
-         <p>
-        As competições de skate acontecem em diversos países e reúnem atletas de alto nível.
- Entre os campeonatos mais famosos estão os X Games e a Street League Skateboarding. 
- Desde sua estreia nos Jogos Olímpicos, o skate ganhou ainda mais visibilidade e 
- reconhecimento internacional, mostrando o talento dos atletas para milhões de espectadores.
-         </p>
+        <a href="#loja" class="category" data-category="Proteção">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=700&q=80" alt="Equipamentos de proteção">
+          <span>04 / SAFETY</span>
+          <h3>PROTEÇÃO ↗</h3>
+        </a>
+      </div>
+    </section>
 
-         <h2>Skatistas famosos</h2>
-         <p>
-            Diversos atletas marcaram a história do skate. Tony Hawk é considerado um dos 
-            maiores nomes do esporte e ficou famoso por realizar o primeiro 900 da história. 
-            Outros grandes destaques são Rodney Mullen, Nyjah Huston e a brasileira Rayssa Leal,
-            que conquistou fãs em todo o mundo com seu talento.
-         </p>
+    <section class="shop section" id="loja">
+      <div class="section-title">
+        <p class="eyebrow">DROP RIOT SELECTION</p>
+        <h2>PRODUTOS EM <span>DESTAQUE.</span></h2>
+        <p>Encontre o equipamento perfeito para o seu próximo rolê.</p>
+      </div>
 
-         <img class=".skate" src="rayssa-leal.jpg">
+      <div class="shop-controls">
+        <input type="search" id="search" placeholder="Buscar produto..." aria-label="Buscar produto">
 
-         <h2>O Futuro do Skate</h2>
-         <p>
-            O futuro do skate é muito promissor. Com sua presença nas Olimpíadas e o crescimento 
-            das redes sociais, cada vez mais jovens estão conhecendo e praticando o esporte. 
-            Novas pistas são construídas todos os anos, surgem novos talentos e a cultura do skate
-          continua se expandindo. Mais do que um esporte, o skate segue inspirando pessoas a desafiar 
-          seus limites e acreditar em seu potencial
-         </p>
-         <footer><a href="https://www.matrizskateshop.com.br/"></a></footer>
+        <div class="filters">
+          <button class="filter active" data-filter="Todos">TODOS</button>
+          <button class="filter" data-filter="Skates">SKATES</button>
+          <button class="filter" data-filter="Tênis">TÊNIS</button>
+          <button class="filter" data-filter="Roupas">ROUPAS</button>
+          <button class="filter" data-filter="Proteção">PROTEÇÃO</button>
+        </div>
+      </div>
+
+      <div class="products" id="products"></div>
+      <p class="note">Produtos e preços ilustrativos. Atualize as informações antes de vender.</p>
+    </section>
+
+    <section class="build">
+      <div class="build-photo"></div>
+      <div class="build-content">
+        <p class="eyebrow">CRIE SEU PRÓPRIO SETUP</p>
+        <h2>SEU SKATE.<br><span>SUAS REGRAS.</span></h2>
+        <p>
+          Escolha shape, rodas, trucks, rolamentos e lixa.
+          Monte um skate com a sua personalidade.
+        </p>
+        <a href="#loja" class="button button-dark" data-show-skates>
+          VER SKATES E PEÇAS ↗
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="skatistas">
+      <div class="section-title">
+        <p class="eyebrow">LENDAS E INSPIRAÇÃO</p>
+        <h2>SKATE É <span>CULTURA.</span></h2>
+        <p>Conheça pessoas que marcaram a história do skate.</p>
+      </div>
+
+      <div class="skaters">
+        <article class="skater">
+          <img src="https://images.unsplash.com/photo-1564982752979-3f7bc974d29a?auto=format&fit=crop&w=700&q=80" alt="Imagem ilustrativa de skate">
+          <div>
+            <span>SKATE INTERNACIONAL</span>
+            <h3>Tony Hawk</h3>
+            <p>
+              Uma das maiores referências do skate vertical.
+              Ficou conhecido por sua trajetória e por popularizar o esporte.
+            </p>
+            <a href="https://www.tonyhawk.com/" target="_blank" rel="noopener">CONHEÇA MAIS ↗</a>
+          </div>
+        </article>
+
+        <article class="skater">
+          <img src="https://images.unsplash.com/photo-1564429238817-393bd4286b2d?auto=format&fit=crop&w=700&q=80" alt="Imagem ilustrativa de skate">
+          <div>
+            <span>STREET BRASILEIRO</span>
+            <h3>Rayssa Leal</h3>
+            <p>
+              Skatista brasileira que conquistou o mundo no street
+              e inspirou milhares de jovens.
+            </p>
+            <a href="https://olympics.com/pt/atletas/rayssa-leal" target="_blank" rel="noopener">CONHEÇA MAIS ↗</a>
+          </div>
+        </article>
+
+        <article class="skater">
+          <img src="https://images.unsplash.com/photo-1520045892732-304bc3ac5d8e?auto=format&fit=crop&w=700&q=80" alt="Imagem ilustrativa de skate">
+          <div>
+            <span>BRASIL NO MUNDO</span>
+            <h3>Bob Burnquist</h3>
+            <p>
+              Referência brasileira conhecida por sua criatividade
+              e por inovar nas rampas.
+            </p>
+            <a href="https://www.bobburnquist.com/" target="_blank" rel="noopener">CONHEÇA MAIS ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="sobre">
+      <p class="eyebrow">MAIS QUE UMA LOJA</p>
+      <h2>A RUA É NOSSA <span>INSPIRAÇÃO.</span></h2>
+      <p>
+        A DROP RIOT celebra o skate, a criatividade e a cultura urbana.
+        Do primeiro skate à próxima manobra, o importante é evoluir
+        no seu próprio ritmo.
+      </p>
+      <a href="#inicio" class="button">VOLTAR AO TOPO ↑</a>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#inicio" class="logo">DROP <span>RIOT✳</span></a>
+    <p>SKATE • STREETWEAR • CULTURA DE RUA</p>
+    <small>© <span id="year"></span> DROP RIOT. Projeto demonstrativo.</small>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay" hidden>
+    <button class="backdrop" id="closeBackdrop" aria-label="Fechar sacola"></button>
+
+    <aside class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <div class="cart-heading">
+        <h2 id="cartTitle">SUA SACOLA</h2>
+        <button id="closeCart" aria-label="Fechar">✕</button>
+      </div>
+
+      <div id="cartItems" class="cart-items"></div>
+
+      <div class="cart-bottom">
+        <p>Subtotal: <strong id="cartTotal">R$ 0,00</strong></p>
+        <small>Este carrinho é demonstrativo e não processa pagamentos.</small>
+        <button class="button" id="checkout">FINALIZAR (DEMO)</button>
+      </div>
+    </aside>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
 </body>
 </html>
