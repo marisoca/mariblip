@@ -5,8 +5,8 @@ const produtos = [
     nome: "SHAPE SANTA CRUZ POWERLYTE PAY OFF DOT",
     categoria: "Skates",
     preco: 284.80,
-    imagem: "https://imagens.https://acdn-us.mitiendanube.com/stores/008/048/969/products/58601064_0004_sample-aag8zm9xcvwbjbb-4b2db38718ecf3dc7717890636084826-1024-1024.webb",
-    
+    imagem: "https://acdn-us.mitiendanube.com/stores/008/048/969/products/58601064_0004_sample-aag8zm9xcvwbjbb-4b2db38718ecf3dc7717890636084826-1024-1024.webp",
+  etiqueta: "NOVO"
   },
   {
     id: 2,
