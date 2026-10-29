@@ -13,7 +13,7 @@ const produtos = [
     nome: "Shape Urban Colors",
     categoria: "Skates",
     preco: 209.90,
-    imagem: "https://images.unsplash.com/photo-1520045892732-304bc3ac5d8e?auto=format&fit=crop&w=700&q=80",
+    imagem: "https://acdn-us.mitiendanube.com/stores/087/236/products/shape-maple-old-school-santa-cruz-dot-dudes-logo-24621365f2e06ea46917885472651372-1024-1024.webp",
     etiqueta: "STREET"
   },
   {
