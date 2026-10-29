@@ -21,7 +21,7 @@ const produtos = [
     nome: "Skate Completo Pro",
     categoria: "Skates",
     preco: 329.90,
-    imagem: "https://images.unsplash.com/photo-1547448415-e9f5b28e570d?auto=format&fit=crop&w=700&q=80",
+    imagem:"https://acdn-us.mitiendanube.com/stores/087/236/products/1-b18aba524953556e4117867382599263-1024-1024.webp",
     etiqueta: "COMPLETO"
   },
   {
