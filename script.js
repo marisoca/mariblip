@@ -34,10 +34,10 @@ const produtos = [
   },
   {
     id: 5,
-    nome: "Shape Graphic Series",
+    nome: "Roda Spitfire F4 Nikolai Pro Edition Classic 99a",
     categoria: "Skates",
     preco: 229.90,
-    imagem: "https://images.unsplash.com/photo-1572776685600-aca9c8a7a2e4?auto=format&fit=crop&w=700&q=80",
+    imagem: "https://acdn-us.mitiendanube.com/ stores/087/236/products/formula-four-nikolai-pro-edition-rodas-skate-1-roda-78c676b5df08a2cc3a17895836040164-1024-1024.webp",
     etiqueta: "NOVO"
   },
 
