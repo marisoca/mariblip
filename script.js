@@ -10,7 +10,7 @@ const produtos = [
   },
   {
     id: 2,
-    nome: "Shape Urban Colors",
+    nome: "Shape santa cruz",
     categoria: "Skates",
     preco: 209.90,
     imagem: "https://acdn-us.mitiendanube.com/stores/087/236/products/shape-maple-old-school-santa-cruz-dot-dudes-logo-24621365f2e06ea46917885472651372-1024-1024.webp",
@@ -44,42 +44,42 @@ const produtos = [
   // TÊNIS
   {
     id: 6,
-    nome: "Tênis Street Grip",
+    nome: "Tênis Hocks Bold - Sombras",
     categoria: "Tênis",
     preco: 249.90,
-    imagem: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=700&q=80",
+    imagem: "https://acdn-us.mitiendanube.com/stores/087/236/products/13-09764d4336e39646f817933607997654-1024-1024.webp",
     etiqueta: "MAIS VENDIDO"
   },
   {
     id: 7,
-    nome: "Tênis Classic Black",
-    categoria: "Tênis",
+    nome: "Tenis Hocks Flat Core Plus Petitpoa",
+   categoria: "Tênis",
     preco: 219.90,
-    imagem: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80",
+    imagem: "https://acdn-us.mitiendanube.com/stores/087/236/products/tenis-hocks-flat-core-plus-petitpoa-f9554df030f6244ad917819038052471.jpg",
     etiqueta: "CLÁSSICO"
   },
   {
     id: 8,
-    nome: "Tênis Urban White",
+    nome: "Tênis OUS Imigrante Serie X Concreto Reflex Essencial",
     categoria: "Tênis",
     preco: 239.90,
-    imagem: "https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?auto=format&fit=crop&w=700&q=80",
+    imagem: "https://acdn-us.mitiendanube.com/stores/087/236/products/19-cbceac90048c41ec8017855021792432-1024-1024.webp",
     etiqueta: "URBAN"
   },
   {
     id: 9,
-    nome: "Tênis Retro Skate",
+    nome: "Tênis Hocks Átimo - Classic Black",
     categoria: "Tênis",
     preco: 269.90,
-    imagem: "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=700&q=80",
+    imagem: "https://acdn-us.mitiendanube.com/stores/087/236/products/13-581b7794790ee5621817931235196920-1024-1024.webp",
     etiqueta: "ESTILO"
   },
   {
     id: 10,
-    nome: "Tênis Street Color",
+    nome: "Tênis Tesla Pulse All White",
     categoria: "Tênis",
     preco: 259.90,
-    imagem: "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=700&q=80",
+    imagem: "https://acdn-us.mitiendanube.com/stores/087/236/products/1-c5a14c5e4a416d7a8d17853572799438-1024-1024.webp",
     etiqueta: "NOVIDADE"
   },
 
