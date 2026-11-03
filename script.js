@@ -18,18 +18,18 @@ const produtos = [
   },
   {
     id: 3,
-    nome: "Skate Completo Pro",
+    nome: "Skate Montado CBGANG Susto",
     categoria: "Skates",
     preco: 329.90,
-    imagem:"https://acdn-us.mitiendanube.com/stores/087/236/products/1-b18aba524953556e4117867382599263-1024-1024.webp",
+    imagem:"https://acdn-us.mitiendanube.com/stores/087/236/products/skate-montado-cbgang-susto-6f0ba04d76260ee07f17549464929214-1024-1024.webp",
     etiqueta: "COMPLETO"
   },
   {
     id: 4,
-    nome: "Rodas Street 52 mm",
+    nome: "Truck Trurium 2.0 X-Light Pro Samuel Jimmy Black",
     categoria: "Skates",
     preco: 119.90,
-    imagem: "https://images.unsplash.com/photo-1520045892732-304bc3ac5d8e?auto=format&fit=crop&w=700&q=80",
+    imagem: "https://acdn-us.mitiendanube.com/stores/087/236/products/trurium-trucks-2-2-x-light-jimmy-black-frente-0726b8a30e4ff3044e17879517575605-1024-1024.webp",
     etiqueta: "PEÇA"
   },
   {
