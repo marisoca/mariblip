@@ -94,76 +94,76 @@ const produtos = [
   },
   {
     id: 12,
-    nome: "Moletom Urban",
+    nome: "Moletom ÖUS Canguru zíper Corrida Maluca Pristine",
     categoria: "Roupas",
     preco: 189.90,
-    imagem: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=700&q=80",
+    imagem: "https://acdn-us.mitiendanube.com/stores/001/109/588/products/img_1754-d0bfc495b0203a5a3a17501082703598-1024-1024.jpg",
     etiqueta: "CONFORTO"
   },
   {
     id: 13,
-    nome: "Jaqueta Street",
+    nome: "Calça Brabois Baggy Street Pants Linha branca",
     categoria: "Roupas",
     preco: 229.90,
-    imagem: "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=700&q=80",
+    imagem: "https://acdn-us.mitiendanube.com/stores/001/109/588/products/img_1577-8e57dc2f40c17c2f8917500216976135-1024-1024.jpg",
     etiqueta: "URBAN"
   },
   {
     id: 14,
-    nome: "Camiseta Graphic",
+    nome: "BONÉ FIVE PANEL BRABOIS veludo",
     categoria: "Roupas",
     preco: 99.90,
-    imagem: "https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=700&q=80",
+    imagem: "https://acdn-us.mitiendanube.com/stores/001/109/588/products/img_7104-8d58032db8c1845a2117217536773359-1024-1024.jpeg",
     etiqueta: "GRAPHIC"
   },
   {
     id: 15,
-    nome: "Calça Cargo Street",
+    nome: "Camiseta ÖUSHEAVY VERGONHA BRANCO",
     categoria: "Roupas",
     preco: 159.90,
-    imagem: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=700&q=80",
+    imagem: "https://acdn-us.mitiendanube.com/stores/001/109/588/products/img_4350-e91a5c4443ca70035f17648644264358-1024-1024.jpg",
     etiqueta: "ESTILO"
   },
 
-  // EQUIPAMENTOS DE PROTEÇÃO
+  // acessórios e equipamentos 
   {
     id: 16,
-    nome: "Capacete Skate Pro",
+    nome: "CAPACETE NIGGLI PRO MODEL ITALO PENARRUBIA PRO LIGHT BRANCO",
     categoria: "Proteção",
     preco: 139.90,
-    imagem: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=700&q=80",
+    imagem: "https://acdn-us.mitiendanube.com/stores/001/109/588/products/img_3729-044098be32a6a88a2217066258880333-1024-1024.jpeg",
     etiqueta: "SEGURANÇA"
   },
   {
     id: 17,
-    nome: "Kit Joelheiras",
+    nome: "KIT DE PROTEÇÃO G COMPLETO NIGGLI PADS PROFISSIONAL Adulto",
     categoria: "Proteção",
     preco: 79.90,
-    imagem: "https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=700&q=80",
+    imagem: "https://acdn-us.mitiendanube.com/stores/001/109/588/products/11-15a2e4d8a39c2ee5ef16703608512925-640-01-0b4717940d30dfcd5b16904003478174-1024-1024.png",
     etiqueta: "PROTEÇÃO"
   },
   {
     id: 18,
-    nome: "Cotoveleiras Street",
-    categoria: "Proteção",
+    nome: "Vela para skate ACE RINGS WAX clear branca grande",
+    categoria: "acessório",
     preco: 69.90,
-    imagem: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=700&q=80",
+    imagem: "https://acdn-us.mitiendanube.com/stores/001/109/588/products/img_9503-d5e26f9fe6500e374317479323999007-1024-1024.jpeg",
     etiqueta: "ESSENCIAL"
   },
   {
     id: 19,
-    nome: "Kit de Proteção Completo",
-    categoria: "Proteção",
+    nome: "Adesivos Bones importado BB MULLEN",
+    categoria: "acessório",
     preco: 159.90,
-    imagem: "https://images.unsplash.com/photo-1547448415-e9f5b28e570d?auto=format&fit=crop&w=700&q=80",
+    imagem: "https://acdn-us.mitiendanube.com/stores/001/109/588/products/img_9523-bcd80f39dd521c7bf817246844265874-1024-1024.jpeg",
     etiqueta: "KIT"
   },
   {
     id: 20,
-    nome: "Munhequeiras de Proteção",
-    categoria: "Proteção",
+    nome: "Adesivos DGK I love haters importado",
+    categoria: "acessório",
     preco: 49.90,
-    imagem: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=700&q=80",
+    imagem: "https://acdn-us.mitiendanube.com/stores/001/109/588/products/img_23251-00956cbb0e0ac1736916904952826097-1024-1024.jpg",
     etiqueta: "SEGURANÇA"
   }
 ];
