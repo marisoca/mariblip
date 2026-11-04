@@ -37,7 +37,7 @@ const produtos = [
     nome: "Roda Spitfire F4 Nikolai Pro Edition Classic 99a",
     categoria: "Skates",
     preco: 229.90,
-    imagem: "https://acdn-us.mitiendanube.com/ stores/087/236/products/formula-four-nikolai-pro-edition-rodas-skate-1-roda-78c676b5df08a2cc3a17895836040164-1024-1024.webp",
+    imagem: "https://acdn-us.mitiendanube.com/stores/087/236/products/design-sem-nome-70-f076f6d513135f3c8317746202152016-1024-1024.webp",
     etiqueta: "NOVO"
   },
 
@@ -86,10 +86,10 @@ const produtos = [
   // ROUPAS STREETWEAR
   {
     id: 11,
-    nome: "Camiseta Oversized",
+    nome: "Touca CBGANG World Preta",
     categoria: "Roupas",
     preco: 89.90,
-    imagem: "https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=700&q=80",
+    imagem: "https://acdn-us.mitiendanube.com/stores/087/236/products/1-feca549b6f27291c0f17835413793211-1024-1024.webp",
     etiqueta: "STREETWEAR"
   },
   {
